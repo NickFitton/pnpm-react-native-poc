@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Button, Text} from 'react-native';
-import {text} from 'foo';
+import {PageTwo} from 'foo/build/PageTwo';
 
 export function Test() {
   const [count, setCount] = useState(0);
@@ -13,9 +13,8 @@ export function Test() {
 
   return (
     <>
-      <Text>
-        App.tsx {count} {text}
-      </Text>
+      <PageTwo />
+      <Text>App.tsx {count}</Text>
       <Button title="increment" onPress={() => setCount(count + 1)} />
     </>
   );
